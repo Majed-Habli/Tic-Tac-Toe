@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #fbfcf8;
+}
+.welcome_section{
+    width: 100%;
+    height: 100%;
+    background-color: #fad818;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.section_container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.pointer_banner{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    transform: rotate(-10deg);
+}
+.pointer_banner.banner_right{
+    transform: rotate(100deg);
+}
+.pointer_banner img{
+    width: 120px;
+    height: 120px;
+
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.3rem;
+    padding: 1rem;
+}
+.title p{
+    font-size: 20px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.button_start{
+    width: 250px;
+    height: 50px;
+    background-color: #fbfcf8;
+    border: 2px solid black;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.button_start:hover{
+    cursor: pointer;
+}
+.game_section{
+    width: 100%;
+    height: 100%;
+    background-color: #fad818;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game_log{
+    width: 360px;
+    height: 100%;
+    background-color: aquamarine;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+
+}
+.turn_history{
+    width: 100%;
+    height: 50%;
+    background-color: bisque;
+}
+.game_board{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(120, 178, 233);
+}
+.score_board{
+    width: 360px;
+    height: 100%;
+    background-color: rgb(230, 101, 91);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.board_container{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board_container img{
+    width: 400px;
+    height: 500px;
+    /* background-color: #fad818; */
+}
