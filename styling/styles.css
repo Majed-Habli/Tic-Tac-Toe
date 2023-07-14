@@ -81,16 +81,42 @@ html,body{
 .game_log{
     width: 360px;
     height: 100%;
-    background-color: aquamarine;
     padding: 1rem;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
 
 }
 .turn_history{
     width: 100%;
     height: 50%;
-    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 3rem;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+.turn-history, input{
+    width:90%;
+    height: 36px;
+    border-radius: 8px;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.turn_history, p{
+    font-size: 22px;
+    color: rgba(56, 26, 114, 0.884);
+}
+.player_history{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    padding: 3rem;
 }
 .game_board{
     width: 100%;
@@ -99,25 +125,21 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(120, 178, 233);
 }
 .score_board{
     width: 360px;
     height: 100%;
-    background-color: rgb(230, 101, 91);
     padding: 1rem;
     display: flex;
     align-items: center;
 }
 .board_container{
-    /* width: inherit; */
-    /* height: fit-content; */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     z-index: 1;
-    background-color: #fad818;
 }
 #gameboard{
     width: 315px;
@@ -130,7 +152,6 @@ html,body{
 .square{
     width: 100px;
     height: 100px;
-    background-color: brown;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -143,7 +164,7 @@ html,body{
 .circle{
     width: 90px;
     height: 90px;
-    border: 15px solid red;
+    border: 15px solid black;
     border-radius: 50%;
     box-sizing: border-box;
 }
@@ -156,7 +177,7 @@ html,body{
 .cross:before, .cross:after{
     content: "";
     position: absolute;
-    background-color: red;
+    background-color: black;
 }
 .cross::before{
     left: 50%;
@@ -169,4 +190,30 @@ html,body{
     height: 30%;
     margin-top: -15%;
     width: 100%;
+}
+.score_text_container{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    
+}
+.row{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.buttons_bg{
+    background-color: transparent;
+}
+button{
+    width: fit-content;
+    padding: 6px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid black;
+
 }

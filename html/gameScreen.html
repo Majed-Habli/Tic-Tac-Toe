@@ -10,6 +10,12 @@
     <div class="game_section">
         <div class="game_log">
             <div class="turn_history">
+                <input type="text" placeholder="player one name"  id="player1_name" onblur="getVal()">
+                <input type="text" placeholder="player two name" id="player2_name" onblur="getVal()">
+                <div class="row buttons_bg">
+                    <button id="btnRestart" type="button" onblur="restart()">restart</button>
+                    <button id="btnNewFame" type="button" onblur="new_game()">newGamme</button>
+                </div>
                 <p id="info"></p>
             </div>
         </div>
@@ -20,8 +26,16 @@
             </div>
         </div>
         <div class="score_board">
-            <div class="turn_history">
-                <!-- current_score -->
+            <div class="player_history">
+                <div class="row">
+                    <p id="p1_name">playerX</p>
+                    <p id="score1">0</p>
+                </div>
+                
+                <div class="row">
+                    <p id="p2_name">playerO</p>
+                    <p id="score2">0</p>
+                </div>
             </div>
         </div>
     </div>
